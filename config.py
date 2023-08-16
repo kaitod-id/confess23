@@ -5,12 +5,12 @@ from telegram import Update
 from telegram.ext import CallbackContext
 
 # Pengaturan bot
-TOKEN = 'YOUR_BOT_TOKEN'
-CHANNEL_1_ID = -1001234567890  # Ganti dengan ID channel tujuan 1
-CHANNEL_2_ID = -1009876543210  # Ganti dengan ID channel tujuan 2
-OWNER_ID = 123456789  # Ganti dengan ID pemilik
-CREATOR_ID = 987654321  # Ganti dengan ID creator
-ADMIN_IDS = [OWNER_ID, CREATOR_ID]  # Tambahkan CREATOR_ID ke daftar admin
+TOKEN = '6344639589:AAEIxPkMYUUr2K6PloxytU-CR-oeMYLeErU'
+CHANNEL_1_ID = -1001825244023  # Ganti dengan ID channel tujuan 1
+CHANNEL_2_ID = -1001855788004  # Ganti dengan ID channel tujuan 2
+OWNER_ID = 1753533568  # Ganti dengan ID pemilik
+CREATOR_ID = 5633222043  # Ganti dengan ID creator
+ADMIN_IDS = [OWNER_ID, CREATOR_ID, 5633222043]  # Tambahkan CREATOR_ID ke daftar admin
 
 # Kamus untuk menyimpan aktivitas pengguna
 USER_ACTIVITY = {}
