@@ -13,7 +13,11 @@ from pyrogram import Client, filters, idle, emoji
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
 
+configuration_file = "config.ini"
+config = configparser.ConfigParser()
+config.read(configuration_file)
 
+token = config.get("bot", "token")
 # Inisialisasi logger
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
