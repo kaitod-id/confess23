@@ -5,6 +5,8 @@ import threading
 import logging
 from datetime import datetime, timedelta
 from config import start, help_command, receive_confession, log_info_pengguna, turunkan_admin, angkat_admin, send_notification, status, tambah_hak, kurang_hak
+from config import config
+
 
 # Inisialisasi logger
 logging.basicConfig(level=logging.INFO,
