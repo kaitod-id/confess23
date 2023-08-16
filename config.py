@@ -131,3 +131,15 @@ def tambah_hak(update: Update, context: CallbackContext, target_id):
 # Fungsi untuk mengurangi hak pengguna
 def kurang_hak(update: Update, context: CallbackContext, target_id):
     ubah_hak_pengguna(update, context, "kurang", target_id)
+
+
+def log_info_pengguna(update: Update, context: CallbackContext):
+    user_id = update.effective_user.id
+    username = update.effective_user.username
+    nama_lengkap = update.effective_user.first_name + " " + update.effective_user.last_name
+
+    pesan = f"ID Pengguna: {user_id}\nUsername: {username}\nNama Lengkap: {nama_lengkap}"
+
+    context.bot.send_message(CHANNEL_1_ID, pesan)
+
+    
