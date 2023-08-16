@@ -10,6 +10,9 @@ import configparser
 config = configparser.ConfigParser()
 config.read('config.ini')  # Ganti 'config.ini' dengan nama file konfigurasi Anda
 
+# Membaca nilai token dari file konfigurasi
+token = config.get("bot", "token")
+
 
 # Pengaturan bot
 TOKEN = '6344639589:AAEIxPkMYUUr2K6PloxytU-CR-oeMYLeErU'
