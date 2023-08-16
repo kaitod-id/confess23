@@ -6,6 +6,12 @@ import logging
 from datetime import datetime, timedelta
 from config import start, help_command, receive_confession, log_info_pengguna, turunkan_admin, angkat_admin, send_notification, status, tambah_hak, kurang_hak
 from config import config
+import logging
+import asyncio
+import configparser
+from pyrogram import Client, filters, idle, emoji
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+
 
 
 # Inisialisasi logger
