@@ -3,6 +3,13 @@ import threading
 from datetime import datetime, timedelta
 from telegram import Update
 from telegram.ext import CallbackContext
+import configparser
+
+
+# Membaca file konfigurasi
+config = configparser.ConfigParser()
+config.read('config.ini')  # Ganti 'config.ini' dengan nama file konfigurasi Anda
+
 
 # Pengaturan bot
 TOKEN = '6344639589:AAEIxPkMYUUr2K6PloxytU-CR-oeMYLeErU'
